@@ -114,8 +114,13 @@ span{
   display: flex;
 }
 
+.weather-header {
+  display: flex;
+  margin-top: 10px;
+}
+
 .weather-button{
-  margin-right: 10px; 
+  margin-right: 10px;
   border: transparent;
   padding: 4px;
   border-radius: 5px;
@@ -126,6 +131,10 @@ span{
   font-family: 'Instrument Sans', sans-serif;
 }
 
-.weather-container {
+.weather-info {
   display: flex;
+}
+
+.temp {
+  margin-right: 5px; 
 }
