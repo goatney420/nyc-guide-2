@@ -2,7 +2,6 @@ import './App.css';
 import Weather from './weather';
 import { food, FoodItem } from './data/food-data'; 
 import { drink, DrinkItem } from './data/drink-data';
-import {activity, ActivityItem } from './data/activity-data';
 
 function App() {
   return (
@@ -42,16 +41,8 @@ function App() {
         </div>
 
         <div className='grid 3'>
-          <h2>activities</h2>
-        <ul>
-          {activity.map((item: ActivityItem, index: number) => (
-            <li key={index}>
-              <span>{item.name}</span>
-               {item.price && <span className="price">free</span>}
-            </li>
-          ))}
-        </ul>
-        <Weather />
+          <h2>activities based on weather</h2>
+          <Weather />
         </div>
       </div> 
     </div>
@@ -59,3 +50,4 @@ function App() {
 }
 
 export default App;
+
